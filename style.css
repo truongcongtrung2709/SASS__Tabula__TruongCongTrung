@@ -75,4 +75,58 @@ header nav ul li .phone-social .phone a:hover {
 }
 header nav ul li .phone-social .social a {
   margin-left: 10px;
+}
+
+.about__us {
+  background-image: url("../images/yellow_top_wave_01.png"), url("../images/Violet_top_left_wave.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100%;
+  background-position: top left, left bottom;
+}
+.about__us .aboutus__content {
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.about__us .aboutus__content .ab-left h4 {
+  font-size: 18px;
+  color: #b61984;
+  font-weight: 600;
+}
+.about__us .aboutus__content .ab-left h1 {
+  font-size: 60px;
+  color: #191919;
+  font-weight: 600;
+}
+
+.staffs {
+  background: #dcd1f3;
+  background-image: url("../images/Wave_White_bottom_right_shape_01.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.staffs .staffs__content {
+  justify-content: center;
+}
+.staffs .staffs__content .card {
+  padding: 20px 20px;
+  width: 280px;
+  text-align: center;
+  background: #dcd1f3;
+  border: 1px solid #dcd1f3;
+  border-radius: 20px;
+}
+.staffs .staffs__content .card .img-container {
+  overflow: hidden;
+}
+.staffs .staffs__content .card .img-container img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.9s ease;
+}
+.staffs .staffs__content .card .img-container:hover img {
+  transform: scale(1.1);
+}
+.staffs .staffs__content .card .card-body {
+  background: white;
 }/*# sourceMappingURL=style.css.map */

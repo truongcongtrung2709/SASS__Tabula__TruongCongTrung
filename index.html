@@ -29,8 +29,9 @@
 </head>
 
 <body>
-  <header>
-    <nav id="navbar" class="navbar fixed-top container navbar-expand-lg navbar-light">
+  <header id="header">
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container">
       <a id="logo"><img src="./images/crest.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -76,8 +77,123 @@
           </li>
         </ul>
       </div>
+    </div>
     </nav>
   </header>
+  <section class="about__us">
+    <div class="container">
+      <div class="row aboutus__content">
+        <div class="ab-left col-lg-6 animate__animated animate__fadeInLeft">
+          <h4>ABOUT US</h4>
+          <h1>The language teaching experts</h1>
+        </div>
+        <div class="ab-right col-lg-6 animate__animated animate__fadeIn">
+          <img src="./images/hero_team.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="staffs">
+    <div class="container">
+      <div class="staffs__content row">
+
+        <div class="card col-lg-3">
+          
+          <div class="img-container">
+          <img class="card-img-top" src="./images/teacher_1.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <span>ITALIAN<span>
+            <h5 class="card-title">July Roberts</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          </div>   
+        </div>
+
+        <div class="card col-lg-3">
+          <div class="img-container">
+          <img class="card-img-top" src="./images/teacher_2.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <span>FRENCH<span>
+            <h5 class="card-title">Jon Stone</h5>
+            <p class="card-text">Nanotechnology immersion along the information.</p>
+          </div>   
+        </div>
+        
+        <div class="card col-lg-3">
+          <div class="img-container">
+          <img class="card-img-top" src="./images/teacher_3.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <span>JAPANESE<span>
+            <h5 class="card-title">Emma Stone
+            </h5>
+            <p class="card-text">Bring to the table win-win survival strategies to ensure.</p>
+          </div>   
+        </div>
+
+        <div class="card col-lg-3">
+          <div class="img-container">
+          <img class="card-img-top" src="./images/teacher_4.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <span>CHINESE<span>
+            <h5 class="card-title">Mark Lee</h5>
+            <p class="card-text">Proactive domination. At the end of the day, going forward.</p>
+          </div>   
+        </div>
+
+      </div>
+      <div class="staffs__content row">
+
+        <div class="card col-lg-3">
+          <div class="img-container">
+          <img class="card-img-top" src="./images/teacher_5.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <span>RUSSIAN<span>
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">A new normal that has evolved from generation X.</p>
+          </div>   
+        </div>
+
+        <div class="card col-lg-3">
+          <div class="img-container">
+          <img class="card-img-top" src="./images/teacher_6.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <span>SWEDEN<span>
+            <h5 class="card-title">Jane Smith</h5>
+            <p class="card-text">Heading towards a streamlined cloud solution.</p>
+          </div>   
+        </div>
+
+        <div class="card col-lg-3">
+          <div class="img-container">
+          <img class="card-img-top" src="./images/teacher_7.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <span>SPANISH<span>
+            <h5 class="card-title">Hanna Alverez</h5>
+            <p class="card-text">Content in real-time will have multiple touchpoints.</p>
+          </div>   
+        </div>
+        
+        <div class="card col-lg-3">
+          <div class="img-container">
+          <img class="card-img-top" src="./images/teacher_1.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <span>ITALIAN<span>
+            <h5 class="card-title">July Roberts</h5>
+            <p class="card-text">Capitalize on low hanging fruit to identify a ballpark.</p>
+          </div>   
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
 
   <br>
   <br>
@@ -123,12 +239,15 @@
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ){
         document.getElementById("logo").style.display = "none";
         document.getElementById("navbar").style.height = "50px";
+        document.getElementById("navbar").style.backgroundColor= "white";
+        document.getElementById("navbar").style.boxShadow ="0 0 10 0";
         document.getElementById("navbar").style.animation = "animate__bounceInDown 2s 2";
       }
       else {
         document.getElementById("logo").style.display = "block";
         document.getElementById("navbar").style.height = "80px";
         document.getElementById("navbar").style.animation = "animate__bounceInDown 2s 2";
+        document.getElementById("navbar").style.background = "transparent";
       }
       
     }</script>

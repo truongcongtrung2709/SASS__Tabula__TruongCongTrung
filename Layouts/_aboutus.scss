@@ -1,0 +1,23 @@
+.about__us{
+    background-image: url("../images/yellow_top_wave_01.png"), url("../images/Violet_top_left_wave.png");
+    background-repeat: no-repeat,no-repeat;
+    background-size: 100%,100%;
+    background-position: top left,left bottom;
+    .aboutus__content{
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+        .ab-left{
+            h4{
+                font-size: $font-sm;
+                color: $secondary-color;
+                font-weight: 600;
+            }
+            h1{
+                font-size: $font-xl;
+                color: $primary-color;
+                font-weight: 600;
+            }
+        }
+    }
+}
