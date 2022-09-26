@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1235px;
+  }
+}
+ul {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #191919;
+}
+
+header {
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+header nav {
+  height: 80px;
+}
+header nav a img {
+  width: 80px;
+  height: 80px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 220px;
+}
+header nav ul li {
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 600;
+  margin-left: 50px;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #b61984;
+}
+header nav ul li .phone-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+header nav ul li .phone-social .phone a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b61984;
+  border: 1px solid #b61984;
+  color: white;
+  font-weight: 300;
+  padding: 12px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+header nav ul li .phone-social .phone a:hover {
+  background-color: white;
+  color: #b61984;
+  box-shadow: 0 0 1px #b61984 inset;
+  transition: 0.3s;
+}
+header nav ul li .phone-social .social a {
+  margin-left: 10px;
+}/*# sourceMappingURL=style.css.map */

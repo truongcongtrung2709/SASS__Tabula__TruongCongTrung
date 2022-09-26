@@ -1,0 +1,62 @@
+header{
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+
+    nav{
+    height: 80px;
+
+        a{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        ul{
+            @include row(flex,center, center);
+            font-size: $font-xs;
+            margin-left: 220px;
+            li{
+                    text-decoration: none;
+                    list-style-type: none;
+                    
+                    font-weight:600;
+                    margin-left: 50px;
+                a{
+                    text-decoration: none;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+                .phone-social{
+                    @include row(flex,space-between, center);
+                    margin-left: 10px;
+                    .phone{
+                        a{
+                            text-decoration: none;
+                            @include row(flex,space-between, center);
+                            background-color: $secondary-color;
+                            border: 1px solid $secondary-color;
+                            color: white;
+                            font-weight: 300;
+                            padding: 12px 22px;
+                            border-radius: 20px;
+                            font-size: $font-xs;
+                            &:hover{
+                                background-color: white;
+                                color: $secondary-color;
+                                box-shadow:  0 0 1px #b61984 inset;
+                                transition: 0.3s;   
+                        }
+                        }
+                    }
+                    .social{
+                        a{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
