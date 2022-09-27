@@ -1,0 +1,62 @@
+.course{
+  background-image: url("../images/accent_bottom_wave_01.png");
+  background-repeat: no-repeat;
+  background-size: 105% 75%;
+  background-position: left bottom;
+  padding: 100px 0;
+  .course-content{
+    overflow: hidden;
+    @include row(flex,center, center);
+    .course-right{
+      .card{
+        box-shadow: 0 0 11px rgba(0,0,0,0.10);
+        border:transparent;
+        border-radius:10px;
+        .card-header{
+          text-align: center;
+          background-color: white;
+          border-bottom: none;
+          .card-title{
+            font-size: $font-lg;
+            font-weight: 700;         
+          }
+          
+        }
+        .card-body{
+          .input-icon{
+            position: relative;
+            i{
+              position: absolute;
+              top:0;
+              padding: 10px;
+              min-width: 40px;
+              color: $secondary-color;
+              font-size: $font-xs;
+            }
+            input, select{
+              padding-left: 30px;
+              border-radius: 20px;
+              color: $primary-color;
+            }
+            .message{
+              width: 100%;
+              padding-left: 30px;
+              border-radius: 20px;
+              color: $primary-color;
+            }
+          }
+          
+        }
+        .card-footer{
+          background-color: white;
+          border-top: none;
+          a{
+            width: 30%;
+            text-align: center;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

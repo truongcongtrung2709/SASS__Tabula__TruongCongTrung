@@ -4,19 +4,17 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     .staffs__content{
-        justify-content: center;
+        padding: 20px 0;
+        margin: -10px;
+
+        .column{
+            
         .card{
-            padding: 20px 20px;
-            width: 280px;
-            text-align: center;
-            background: $bg-gray;
-            border: 1px solid $bg-gray;
+            border: transparent;
             border-radius: 20px;
                 .img-container{
                     overflow: hidden;
                     img{
-                        border-top-left-radius: 10px;
-                        border-top-right-radius: 10px;
                         transition: transform .9s ease;
                     }
                     &:hover img{
@@ -27,7 +25,37 @@
                 }  
                 .card-body{
                     background: white;
+                    text-align: center;
+                    span{
+                        font-size: $font-xs;
+                        color: $secondary-color;
+                    }
+                    h5{
+                        color: $primary-color;
+                        font-weight: 700;
+                        font-size: $font-md;
+                    }
+                    p{
+                        color: $primary-color;
+                    }
+                }
+                &:hover{
+                    box-shadow: 0 0 20px rgba(33,33,33,.2); 
+                    transition:all 1s;
                 }
             }
         }
+        @media screen and (max-width: 600px) {
+            .column {
+              width: 100%;
+              display: block;
+              margin-bottom: 20px;
+            }
+          }
     }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+}

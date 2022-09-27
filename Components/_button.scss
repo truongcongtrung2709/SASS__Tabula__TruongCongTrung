@@ -1,0 +1,17 @@
+.button-purple{
+  text-decoration: none;
+  @include row(flex,space-between, center);
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  color: white;
+  font-weight: 300;
+  padding: 12px 22px;
+  border-radius: 20px;
+  font-size: $font-xs;
+  &:hover{
+      background-color: white;
+      color: $secondary-color;
+      box-shadow:  0 0 1px #b61984 inset;
+      transition: 0.3s;                               
+}
+}
