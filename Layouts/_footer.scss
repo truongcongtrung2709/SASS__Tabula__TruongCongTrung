@@ -1,6 +1,48 @@
-footer{
+.footer{
   background-image: url("../images/footer_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 100% 115%;
+  padding-bottom: 17em;
+  .container{
+  .footer-content{
+    @include row(flex,space-between, center);
+    .footer-item{
+      color:white;
+      font-size: $font-xs;
+      h4{
+        font-weight: 600;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      i{
+        padding-right:10px;
+      }
+      input{
+        background-color: $secondary-color;
+        border-radius: 20px;
+        border: 1px solid white;
+        color: white;
+        text-align: center;
+        padding:10px 20px;
+      }
+      .btn-sub{
+        background-color: white;
+        color: $primary-color;
+        &:hover{
+          background-color: $secondary-color;
+          border: 1px solid white;
+          color: white;
+        }
+      }
+      li{
+        margin-top:20px;
+      }
+      
+    }
+    
+  }
+}
 }

@@ -13,7 +13,8 @@
 ul {
   list-style: none;
 }
-ul li a {
+
+a {
   text-decoration: none;
   color: #191919;
 }
@@ -215,9 +216,49 @@ header nav ul li .social a {
   font-weight: 600;
 }
 
-footer {
+.footer {
   background-image: url("../images/footer_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 100% 115%;
+  padding-bottom: 17em;
+}
+.footer .container .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .container .footer-content .footer-item {
+  color: white;
+  font-size: 14px;
+}
+.footer .container .footer-content .footer-item h4 {
+  font-weight: 600;
+}
+.footer .container .footer-content .footer-item a {
+  text-decoration: none;
+  color: white;
+}
+.footer .container .footer-content .footer-item i {
+  padding-right: 10px;
+}
+.footer .container .footer-content .footer-item input {
+  background-color: #b61984;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+.footer .container .footer-content .footer-item .btn-sub {
+  background-color: white;
+  color: #191919;
+}
+.footer .container .footer-content .footer-item .btn-sub:hover {
+  background-color: #b61984;
+  border: 1px solid white;
+  color: white;
+}
+.footer .container .footer-content .footer-item li {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
